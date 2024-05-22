@@ -6,33 +6,69 @@ const typeDropdown = document.getElementById("typeDropdown");
 const searchButton = document.getElementById("searchButton");
 const viewAllButton = document.getElementById("viewAllBuuton");
 const searchResults = document.getElementById("searchResults");
+const onLocationBtn = document.getElementById("location");
+const parkType = document.getElementById("parkType");
 
 window.onload = () => {
-  loadParkType();
-  searchType.onchange = onTypeDropdownChanged;
+  onLocationBtn.addEventListener("change", populateOption);
+  parkType.addEventListener("change", populateOption);
+  //   loadParkType();
+  //   searchType.onchange = onTypeDropdownChanged;
 };
 
-function loadParkType() {
-  for (let i = 0; i < parkTypesArray.length; i++) {
-    let theOption = new Option(parkTypesArray[i], parkTypesArray[i]);
-    typeDropdown.appendChild(theOption);
-  }
-}
+// function loadParkType() {
+//   for (let i = 0; i < parkTypesArray.length; i++) {
+//     let theOption = new Option(parkTypesArray[i], parkTypesArray[i]);
+//     typeDropdown.appendChild(theOption);
+//   }
+// }
 
-function loadLocationType() {}
-for (let i = 0; i < locationsArray.length; i++) {
-  let theOption2 = new Option(locationsArray[i], locationsArray[i]);
-  locationDropdown.appendChild(theOption2);
-}
+// function loadLocationType() {}
+// for (let i = 0; i < locationsArray.length; i++) {
+//   let theOption2 = new Option(locationsArray[i], locationsArray[i]);
+//   locationDropdown.appendChild(theOption2);
+// }
 
-function onTypeDropdownChanged() {
-  if (searchType.value === "type") {
-    loadParkType();
-    console.log("park");
+// function onTypeDropdownChanged() {
+//   if (searchType.value === "type") {
+//     loadParkType();
+//     console.log("park");
+//   } else {
+//     loadLocationType();
+//     console.log("location");
+//   }
+// }
+
+function populateOption() {
+  //clear previous results
+  searchResults.innerHTML = "";
+  if (onLocationBtn.checked) {
+    populateState();
   } else {
-    loadLocationType();
-    console.log("location");
+    `nothing is selected`;
   }
+}
+
+function populateState() {
+  const stateSelect = document.createElement("select");
+  // state.className = "form-control";
+
+  locationsArray.forEach((state) => {
+    const stateOptions = document.createElement("option");
+    stateOptions.textContent = state;
+    console.log(state);
+
+    stateSelect.appendChild(stateOptions);
+  });
+  searchResults.appendChild(stateSelect);
+}
+
+function populateParkType() {
+    const parkTypeSelect = document.createElement("select");
+    locationsArray.forEach((state))
+    parkTypeSelect.textContent = 
+    console.log(state);
+    
 }
 
 /*TODO:
