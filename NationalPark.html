@@ -55,11 +55,47 @@
         </nav>
     </header>
 
+    <main>
+        <h1>Find Your National Park</h1>
+        <div id="search-options">
+            <label for="search-type">Search By:</label>
+            <select id="searchType">
+                <option value="type">Park Type</option>
+            </select>
+        </div>
+
+        <div id="location-search" class="search-dropdown">
+            <label for="state-dropdown">Select State/Territory:</label>
+            <select id="stateDropdown"></select>
+        </div>
+
+        <div id="type-search" class="search-dropdown" style="display:none;">
+            <label for="type-dropdown">Select Park Type</label>
+            <select id="typeDropdown"></select>
+        </div>
+
+        <button id="searchButton">Search</button>
+        <button id="viewAll-Button">View All National Parks</button>
+        </div>
+
+        <div class="search-results" id="serachResults">
+
+        </div>
+
+        <footer>
+            <p>2024 Explore the Great Outdoors. All Rights reserved.</p>
+          </footer>
+
+    </main>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="scripts/nationalParkData.js"></script>
-        <script src="scripts/nationalpark.js"></script>
+    <script src="scripts/nationalParkData.js"></script>
+    <script src="scripts/nationalpark.js"></script>
+    <script src="scripts/locationData.js"></script>
+    <script src="scripts/parkTypeData.js"></script>
+
 
 
 
