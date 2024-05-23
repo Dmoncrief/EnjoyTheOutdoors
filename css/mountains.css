@@ -53,9 +53,9 @@ header {
 }
 
 /* Navigation menu */
-nav ul {
+/* nav ul {
   list-style: none;
-}
+} */
 
 nav ul li {
   display: inline-block;
