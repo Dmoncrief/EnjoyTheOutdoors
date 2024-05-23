@@ -3,10 +3,36 @@ footer {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
   }
   
   footer p {
     margin-bottom: 0;
   }
   
+  /* select options */
+
   
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  display: flex; /* Add display flex to make children line up horizontally */
+  justify-content: space-between; /* Optional: Distributes space between elements */
+  align-items: center; /* Optional: Aligns items vertically in the center */
+  font-size:25px;
+}
+
+/* mountain image background */
+.back-image{
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; 
+  /* layers the image behind the text */
+  opacity: 0.9;
+}
