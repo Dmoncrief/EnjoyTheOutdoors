@@ -20,7 +20,7 @@ footer {
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
-  display: flex; /* Add display flex to make children line up horizontally */
+  display: flex; 
   justify-content: space-between; /* Optional: Distributes space between elements */
   align-items: center; /* Optional: Aligns items vertically in the center */
   font-size:25px;
