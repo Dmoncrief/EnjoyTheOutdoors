@@ -24,6 +24,8 @@ footer {
   justify-content: space-between; /* Optional: Distributes space between elements */
   align-items: center; /* Optional: Aligns items vertically in the center */
   font-size:25px;
+  color:white;
+  text-shadow:1px 2px 2px #000;
 }
 
 /* mountain image background */
@@ -35,4 +37,9 @@ footer {
   z-index: -1; 
   /* layers the image behind the text */
   opacity: 0.9;
+}
+
+#header-box{
+  padding-top: 40px;
+  text-shadow:1px 2px 2px white;
 }
