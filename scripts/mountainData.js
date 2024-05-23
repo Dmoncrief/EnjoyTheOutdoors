@@ -528,4 +528,4 @@ const mountainsArray = [
     },
   },
 ];
-console.log(mountainsArray);
+// console.log(mountainsArray);
