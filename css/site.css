@@ -80,16 +80,9 @@
 
 .intro{
     text-align: center;
-    font-family: Arial;
-    font-size: 20px bold;
+    font-family: fantasy,'Times New Roman', Times, serif;
+    font-size: 30px bold;
 }
 
 
-/* Mountains Page */
 
-
-#mountainsContainer{
-    text-align: center;
-    font-family: Helvetica;
-    
-}

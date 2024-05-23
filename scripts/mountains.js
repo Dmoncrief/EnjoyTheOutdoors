@@ -1,7 +1,8 @@
-"use strict";
-
-// Get the dropdown element
+// Get the elements
 const mountainDropdown = document.getElementById("mountainDropdown");
+const mountainInfo = document.getElementById("mountainInfo");
+const mountainDesc = document.getElementById("mountainDesc");
+const mountainElevation = document.getElementById("mountainElevation");
 
 // Populate the dropdown with mountain options
 mountainsArray.forEach((mountain, index) => {
@@ -25,9 +26,10 @@ function showMountainInfo() {
     // Get the mountain object from the array based on the selected index
     const mountain = mountainsArray[selectedIndex];
 
-    // Display the mountain name and elevation
+    // Display the mountain name, description, and elevation
     document.getElementById("mountainName").textContent = mountain.name;
-    document.getElementById("mountainDesc").textContent = `Elevation: ${mountain.elevation} feet`;
+    document.getElementById("mountainDesc").textContent = mountain.description;
+    document.getElementById("mountainElevation").textContent = `Elevation: ${mountain.elevation} feet`;
 
     // Display the mountain image
     document.getElementById("mountainImg").src = "images/capstone2/images/" + mountain.img;
@@ -36,3 +38,6 @@ function showMountainInfo() {
     // Show the mountain information
     document.getElementById("mountainInfo").style.display = "block";
 }
+
+// Add event listener to the dropdown to trigger showMountainInfo function
+mountainDropdown.addEventListener("change", showMountainInfo);
