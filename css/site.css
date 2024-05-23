@@ -81,8 +81,18 @@
 .intro{
     text-align: center;
     font-family: EB Garmond bold;
+    font-size: 30px;
+}
+
+.carousel-caption h5,
+.carousel-caption p {
+    color: white;
     font-size: 20px;
 }
 
+#welcome-heading {
+  font-size: 50px; 
+  font-family:EB garamond;
+}
 
 
