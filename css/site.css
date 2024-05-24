@@ -95,4 +95,10 @@
   font-family:EB garamond;
 }
 
+.box {
+  border: 2px solid #000; /* border color */
+  padding: 20px; /* padding inside the box */
+  width: fit-content; /* make the box width fit its content */
+  background-color: rgba(162, 99, 99, 0.7); /* background color with opacity */
+}
 

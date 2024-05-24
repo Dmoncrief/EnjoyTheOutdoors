@@ -35,7 +35,7 @@ footer {
 /* Set body font and background */
 body {
   font-family: EB garamond;
-  background-color: #f4f4f4;
+  background-color: #808080;
 }
 
 /* Container to center content */
@@ -57,7 +57,7 @@ header {
   list-style: none;
 } */
 
-nav ul li {
+/* nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
@@ -81,7 +81,7 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive styles */
+/* Responsive styles */ 
 @media (max-width: 768px) {
   nav ul li {
       display: block;
